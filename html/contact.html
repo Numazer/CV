@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+	     <meta charset="utf-8">
+	     <title>Contact</title>
+	     <meta name="author" content="Saadi Emmanuel">
+	     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	     <link rel="stylesheet" href="style.css">
+   </head>
+   <style>
+      form {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+      label {
+        display: block;
+        font-size: 20px;
+        margin-top: 30px;
+      }
+      input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+   </style>
+
+   <body>
+      <form name="test" action="#" method="post">
+          <label for="nom">Quel est votre nom ?</label>
+              <input type="text" name="test" placeholder="saisir votre nom" required>
+
+          <label for="email">Quel est votre adresse mail ?</label>
+              <input type="text" name="test" placeholder="saisir votre email" required> 
+
+          <label for="mot de passe">saisir mot de passe</label>
+              <input type="text" name="test" placeholder="mot de passe" required>
+
+          <label for="adresse">adresse postale</label>
+              <input type="text" name="test" placeholder="numéro, type de rue, code postale, commune" required>
+
+          <label for="numéro de téléphone">numéro de téléphone</label>
+              <input type="tel" name="test" pattern="[0-9]{10}" placeholder="0X-XX-XX-XX-XX">
+                    <button type="submit" >Envoyer</button>
+
+      </form>
+   </body>
